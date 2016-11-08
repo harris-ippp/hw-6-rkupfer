@@ -20,3 +20,5 @@ with open("ELECTION_ID", "w") as out:
             year = cell.string
             a = year + " " + election_id + "\n"
             out.write(a)
+for line in open("ELECTION_ID"):
+    print(line)
