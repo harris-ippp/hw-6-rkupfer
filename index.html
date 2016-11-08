@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Election Prediction :: Map and Table</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:600,500,400,300,200,100,400italic0&subset=latin,greek,latin-ext' rel='stylesheet' type='text/css'>
+
+<style>
+* { font-family: 'Times New Roman', Times; }
+body {margin: 0% 10%;}
+ul.nav {
+  list-style-type: none;
+  margin: 5px;
+  padding: 5px;
+  overflow: auto;
+  background-color: darkblue;
+}
+ul.nav li { float: left; }
+ul.nav li a {
+  display: inline-block;
+  color: lightblue;
+  padding: 16px 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+ul.nav li a.active {
+  color: aqua;
+  background-color: #FFF;
+  font-weight: bold;
+}
+ul.nav li:hover {
+  background-color: #555;
+  transition: 0.5s;
+}
+img {
+  border: 10px;
+  border-style: solid;
+  border-color: lightblue;
+  margin: 0px 40px;
+}
+
+table {
+  align: center;
+  border-width: 5px 0px;
+  border-style: solid;
+  border-color: lightblue;
+  background: #eee;
+  padding: 0px;
+  border-spacing: 0px;
+}
+th {
+  color: navy;
+  background-color: lightblue;
+}
+th, td {
+  text-align: left;
+  padding: 3px 15px;
+}
+h1 {
+	text-align: center;
+  color: royalblue;
+}
+h2{
+	text-align: center;
+  color: aqua;
+}
+h3{
+	text-align: left;
+  color: cornflowerblue;
+}
+h4{
+	text-align: center;
+  color: deepskyblue;
+}
+h5{
+	text-align: center;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<ul class="nav">
+  <li><a href="#Maps and Predictions" class="active">Map and Predictions</a></li>
+  <li><a href="#Results">Results</a></li>
+  <li><a href="#Limitations">Limitations</a></li>
+	<li><a href="#Methodology">Methodology</a></li>
+</ul>
+
+<div id="myDiv" name="#Maps and Predictions" title="Map and Predictions">
+<h1>Election Predictions for the November 8th, 2016: Share of Votes Cast for the Democratic Candidate, <em>Hillary Clinton</em></h1>
+
+<p>
+<img src="file:///Users/RachelKupfer/Library/Mobile%20Documents/com~apple~CloudDocs/UChicago/Harris%20Year%202%20(2016%20-%202017)/Fall%20Quarter%20(2016)/The%20Science%20of%20Elections%20and%20Campaigns/Election%20Prediction/Screen%20Shot%202016-11-03%20at%2012.06.18%20AM.png" alt="Map of Predictions " width="55%" align="right">
+<h2>Introduction</h2>
+The November 8, 2016 General Election will most likely be known for its arduous, drawn-out, and scandal-ridden campaign season.
+Mr. Donald Trump and Former Secretary of State Hillary Rodham Clinton took part in two of the top three most watched Presidential debates in history, and had so many scandals that they eventually became the norm of the 2016 campaign cycle.
+But as with every (presidential) election cycle, it is important to understand the factors that have the greatest impact on determining the outcome, as well as use them to attempt to predict--or at least gain a better understanding of--the impending election.
+On this webpage, I will discuss the presidential election model that I have created to predict the democratic share of votes for each candidate in each state within the United States, the methodology behind it, and important indicators that have the greatest impacts on accurately predicting an election.
+
+<p>
+<p>
+<p>
+<h5> , </h5>
+<p>
+<h3>Predictions Table</h3>
+Below is a table of my predictions of the share of votes that Hillary Clinton will win in the upcoming election.  For Methodology, explanations, and other information, please see the other sections of this website.
+<p>
+
+<table>
+  <tr><th>State</th>      <th>Prediction for Dem Share of Votes</th></tr>
+  <tr><td>Alabama</td>       	<td>34.129075</td></tr>
+  <tr><td>Alaska</td>     		<td>36.67511</td></tr>
+  <tr><td>Arizona</td>  			<td>40.63378</td></tr>
+  <tr><td>Arkansas</td>      	<td>37.32541</td></tr>
+  <tr><td>California</td> 		<td>51.786755</td></tr>
+	<tr><td>Colorado</td>      	<td>42.953095</td></tr>
+  <tr><td>Connecticut</td> 		<td>44.194505</td></tr>
+	<tr><td>Delaware</td>      	<td>48.15019</td></tr>
+  <tr><td>Florida</td> 				<td>44.5074</td></tr>
+	<tr><td>Georgia</td>      	<td>42.357345</td></tr>
+  <tr><td>Hawaii</td> 				<td>50.553245</td></tr>
+	<tr><td>Idaho</td>      		<td>30.043255</td></tr>
+  <tr><td>Illinois</td> 			<td>49.491225</td></tr>
+	<tr><td>Indiana</td>      	<td>39.024075</td></tr>
+  <tr><td>Iowa</td> 					<td>42.8656</td></tr>
+	<tr><td>Kansas</td>      		<td>36.387365</td></tr>
+	<tr><td>Kentucky </td> 			<td>39.67492</td></tr>
+	<tr><td>Louisiana </td> 		<td>38.57904</td></tr>
+	<tr><td>Maine </td> 				<td>44.75489</td></tr>
+	<tr><td>Maryland </td> 			<td>56.558985</td></tr>
+	<tr><td>Massachusetts </td> <td>55.0701</td></tr>
+	<tr><td>Michigan </td> 			<td>44.03498</td></tr>
+	<tr><td>Minnesota </td> 		<td>48.330475</td></tr>
+	<tr><td>Mississippi </td> 	<td>36.906595</td></tr>
+	<tr><td>Missouri </td> 			<td>48.2346</td></tr>
+	<tr><td>Montana </td> 			<td>33.626735</td></tr>
+	<tr><td>Nebraska </td> 			<td>32.194795</td></tr>
+	<tr><td>Nevada </td> 				<td>43.397195</td></tr>
+	<tr><td>New Hampshire </td> <td>43.918145</td></tr>
+	<tr><td>New Jersey </td> 		<td>45.4186</td></tr>
+	<tr><td>New Mexico </td> 		<td>45.27025</td></tr>
+	<tr><td>New York </td> 			<td>52.89738</td></tr>
+	<tr><td>North Carolina </td><td>44.268905</td></tr>
+	<tr><td>North Dakota </td> 	<td>33.84118</td></tr>
+	<tr><td>Ohio </td> 					<td>44.05669</td></tr>
+	<tr><td>Oklahoma </td> 			<td>35.354405</td></tr>
+	<tr><td>Oregon </td> 				<td>47.45677</td></tr>
+	<tr><td>Pennsylvania </td> 	<td>46.94552</td></tr>
+	<tr><td>Rhode Island </td> 	<td>52.873845</td></tr>
+	<tr><td>South Carolina </td> <td>41.44961</td></tr>
+	<tr><td>South Dakota </td> 	<td>37.110315</td></tr>
+	<tr><td>Tennessee </td> 		<td>44.602715</td></tr>
+	<tr><td>Texas </td> 				<td>41.73947</td></tr>
+	<tr><td>Utah </td> 					<td>28.548125</td></tr>
+	<tr><td>Vermont </td> 			<td>49.330405</td></tr>
+	<tr><td>Virginia </td> 			<td>44.43944</td></tr>
+	<tr><td>Washington </td> 		<td>47.59574</td></tr>
+	<tr><td>West Virginia </td> <td>36.378615</td></tr>
+	<tr><td>Wisconsin </td>     <td>46.839795</td></tr>
+  <tr><td>Wyoming</td> 				<td>26.21626</td></tr>
+
+</table>
+
+<p>
+<h4>
+<a href=http://projects.fivethirtyeight.com/2016-election-forecast/?ex_cid=2016-senate-forecast>This</a> is the FiveThirtyEight Prediction Model for the upcoming election.</h4>
+The FiveThirtyEight model is a highly regarded (and historically very accurate) model for the election.  I would view this model (over the one I've created above) as a more representative model based on more polls, more robust data, and other historical data.
+<p>
+<img src="http://projects.fivethirtyeight.com/2016-election-forecast/images/logo-2016-elections.svg?v=6aca89df7daa3acd14551ecdbe0e885d" alt="Map of Predictions " width="33%" align="center">
+<p>
+<p>
+<p>
+	<h5> , </h5>
+<p>
+</div>
+<a href='#top'>Top of Page</a>
+</section>
+
+<section>
+<div id="Results" name="#Results" title="Results"
+<title><h2 id="Results">Results</h2></title>
+The above map and chart display the results from the model.
+Clinton, the Democratic candidate, predicted to win as little as 28 and as much as 58 percent of the vote in different states across the country.
+Again, this does not account for the third party candidates.
+It is possible that Clinton win a state with 48% of votes in that state.
+Most notable are Texas, for which roughly 42% of votes would go to the democrat and New Mexico with 45%
+(though it is expected that Johnson will get around 10% of the NM vote), both possibly showing a shift in demographics.
+The states in which Hilary Clinton will likely get the greatest share of the vote include Hawaii, New York, California, Maryland and Massachusetts.
+The states in which she will likely get the smallest share of votes include Wyoming, Utah, and Nebraska.
+<p>
+Understanding how this model compares to the results of the actual election on November 8, 2016 can help us refine and improve the model so as to ensure that it is a more accurate predictor of future elections.
+
+<p>
+<p>
+<p>
+<h5> , </h5>
+</div>
+
+<a href='#top'>Top of Page</a>
+</section>
+
+<section>
+<div id="Limitations" name="#Limitations" title="Limitations"
+<title><h2 id="limitations">Limitations to the Model</h2></title>
+
+Before I discuss the components of the model, it is essential to acknowledge the limitations.
+Since there are very limited public polling datasets from this election, it is hard to aggregate polls over time in order to create a more accurate landscape of the election.
+Without multiple datasets, it is impossible to weight data based on methodology (in order to account for sampling sizes, phrasing of questions, and other biases that may skew the data), or adjust for how recent the poll was conducted.
+(More recent polls will inevitably be a more accurate depiction of opinions people hold today, and therefore will likely be more representative of future opinions).
+Similarly, because the election is still a week away, this model, run as of November 2nd, is not as accurate as it would be on November 7th.
+It is impossible to know what will happen between now and November 8th--especially in an election as tumultuous as this one.
+However, ideally, it is an accurate representation of what the election would look like if it were held today.
+That being said, the affects of this cycle's October Surprise in the form of FBI Director Comey's email have not yet been fully quantified--as most polls that have come out at the end of last week/beginning of this are based on interviews conducted before the story became public.
+This means that the aftermath of the scandal, and the affects it has on voters' decisions has not been accounted for within this model.
+Similarly, just as there was no precedent for the outcome of an election with the first African American candidate running, there is no precedent for the outcome of one with a female candidate (nor is there one for an election in which Donald Trump is the Republican Party's nominee).
+<p>
+Furthermore, one of the biggest limitations or challenges is that this race is a three-candidate race, whereas most elections in the past-and the model created-does not account for third party candidates.
+The assignment was to predict the Democratic share of the two-party vote, however it is impossible not to acknowledge the third party candidate, Gary Johnson.
+The model does not account for Johnson (though as I will explain, I have adjusted for this somehow), nor does it account for Evan McMullin in Utah.
+It is generally unclear what percentage of would be Clinton or Trump supporters in this model would support a third party candidate.
+<p>
+<p>
+<p>
+<h5> , </h5>
+</div>
+<a href='#top'>Top of Page</a>
+</section>
+
+
+
+
+<section>
+
+<div id="Methodology" name="#Methodology" title="Methodology"
+<title><h2 id="Methodology">Methodology</h2></title>
+
+This model incorporated election data from 1960 through 2012.
+It includes percentage shares of votes held by democrats by state, through 2012, incumbency (while a president in office may have an incumbency benefit,
+there is evidence to show that it can lower the likelihood for a party to win the election if that party has held the Presidency for an extended period of time),
+dangerous foreign engagements like war, the unemployment rate (if the unemployment rate has increased over the past years, there will be less favorable views of the incumbent party),
+and favorability ratings of the person in office before the election, over three time periods: June and July, August and September, and October and November.
+<p>
+After creating this model and running an OLS regression in order to find the best fit of data, I averaged the data with polling data that I found and, when there was enough data, aggregated across datasets.
+I was unable to incorporate polling data from the 2016 election into the model, and therefore averaging an aggregated set of polling data (in theory) can help adjust the model and take both polling data and historical data into account.
+<p>
+Other factors that would have been included in this model with the availability and transparency of data would be early voting data as well as money spent in the state in the weeks before the campaign.
+
+<p>
+<h5> , </h5>
+</div>
+<a href='#top'>Top of Page</a>
+</section>
+<p>
+<h5> , </h5>
+<p>
+</body>
+</html>
